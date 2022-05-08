@@ -1,0 +1,1 @@
+C:\github\Quran\buildSrc\build\classes\kotlin\main\AppConfig.class;C:\github\Quran\buildSrc\build\classes\kotlin\main\Dependencies.class;C:\github\Quran\buildSrc\build\classes\kotlin\main\DependencyHandlerKt.class;C:\github\Quran\buildSrc\build\classes\kotlin\main\Versions.class
