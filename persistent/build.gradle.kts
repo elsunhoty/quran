@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    kotlin("android")
+    kotlin("kapt")
 }
 
 android {
@@ -27,8 +28,22 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
+    implementation(Dependencies.coreKtx)
+    implementation(Dependencies.roomDependencies)
+    implementation(Dependencies.roomDependencies)
+    implementation(Dependencies.injector)
 
+    kapt(Dependencies.roomKapt)
+
+    testImplementation(Dependencies.unitTestDependencies)
+    testImplementation(Dependencies.robolectric)
+    testImplementation(Dependencies.roomTest)
 }

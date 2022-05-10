@@ -8,3 +8,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+/gradle/wrapper/gradle-wrapper.jar
+/gradle/wrapper/gradle-wrapper.properties
+/app/proguard-rules.pro

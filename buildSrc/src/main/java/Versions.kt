@@ -8,7 +8,12 @@ object Versions {
     const val constraintLayout = "2.1.3"
     //test
     const val testCore = "1.4.0"
+    const val testArcCore = "2.1.0"
     const val junit = "4.13.2"
     const val extJunit = "1.1.3"
     const val espresso = "3.4.0"
+    const val robolectric = "4.8"
+    // room
+    const val roomDatabase = "2.4.2"
+
 }

@@ -5,6 +5,9 @@ fun DependencyHandler.kapt(list: List<String>) {
         add("kapt", dependency)
     }
 }
+fun DependencyHandler.kapt(item :String) {
+        add("kapt", item)
+}
 
 fun DependencyHandler.implementation(list: List<String>) {
     list.forEach { dependency ->
