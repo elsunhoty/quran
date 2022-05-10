@@ -10,14 +10,12 @@ import com.elsunhoty.persistent.models.ChapterLocal
 interface ChapterDao {
 
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun saveChapter(vararg chapterLocal: ChapterLocal) : List<Long>
+
+
     @Query(" SELECT * FROM `chapters` ORDER BY number ASC")
     fun getChapters():List<ChapterLocal>
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun saveChapter(chapterLocal: ChapterLocal): Long
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun saveChapter(chapterLocal: List<ChapterLocal>)
 
 
 }

@@ -22,11 +22,11 @@ object Dependencies {
     //                  Test Dependencies                //
     //---------------------------------------------------//
     private const val testCore = "androidx.test:core:${Versions.testCore}"
-    private const val testArcCore = "androidx.arch.core:core-testing:${Versions.testArcCore}"
     private const val junit = "junit:junit:${Versions.junit}"
     private const val junitEx = "androidx.test.ext:junit:${Versions.extJunit}"
 
     const val robolectric = "org.robolectric:robolectric:${Versions.robolectric}"
+    const val testArcCore = "androidx.arch.core:core-testing:${Versions.testArcCore}"
 
     //endregion
     //region Injection
@@ -46,6 +46,12 @@ object Dependencies {
     const val roomTest = "androidx.room:room-testing:${Versions.roomDatabase}"
 //    private const val roomTestCore = "android.arch.persistence.room:testing:1.1.1"
     //endregion
+    //region LiveData
+    //---------------------------------------------------//
+    //             LiveData      dependencies            //
+    //---------------------------------------------------//
+    const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.liveData}"
+    //endregion
 
     //---------------------------------------------------//
     //               Dependencies  List                  //
@@ -61,7 +67,6 @@ object Dependencies {
     }
     val unitTestDependencies = arrayListOf<String>().apply {
         add(testCore)
-        add(testArcCore)
         add(junit)
         add(junitEx)
     }

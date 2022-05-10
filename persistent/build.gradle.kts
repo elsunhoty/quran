@@ -41,9 +41,15 @@ dependencies {
     implementation(Dependencies.roomDependencies)
     implementation(Dependencies.injector)
 
+    implementation(Dependencies.liveData)
+        ?.because("Required For robolectric Test Cases")
+
     kapt(Dependencies.roomKapt)
 
     testImplementation(Dependencies.unitTestDependencies)
     testImplementation(Dependencies.robolectric)
     testImplementation(Dependencies.roomTest)
+    testImplementation(Dependencies.testArcCore)
+
+
 }
