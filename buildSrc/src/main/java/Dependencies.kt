@@ -72,7 +72,6 @@ object Dependencies {
         add(materialDesign)
         add(constraintLayout)
     }
-
     val restfulApi = arrayListOf<String>().apply {
         add(retrofit)
         add(okHttp)
