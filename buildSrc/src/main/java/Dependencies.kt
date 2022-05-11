@@ -52,6 +52,17 @@ object Dependencies {
     //---------------------------------------------------//
     const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.liveData}"
     //endregion
+    //region Injection
+    //---------------------------------------------------//
+    //                  Restful Api            //
+    //---------------------------------------------------//
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
+    const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
+    const val converterGson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+    const val gson = "com.google.code.gson:gson:${Versions.gson}"
+    const val formatLogInterceptor = "com.github.ihsanbal:LoggingInterceptor:${Versions.logInterceptor}"
+    //endregion
 
     //---------------------------------------------------//
     //               Dependencies  List                  //
@@ -60,6 +71,14 @@ object Dependencies {
         add(appCompat)
         add(materialDesign)
         add(constraintLayout)
+    }
+    val restfulApi = arrayListOf<String>().apply {
+        add(retrofit)
+        add(okHttp)
+        add(loggingInterceptor)
+        add(converterGson)
+        add(gson)
+        add(formatLogInterceptor)
     }
     val roomDependencies = arrayListOf<String>().apply {
         add(room)

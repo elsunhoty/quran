@@ -16,5 +16,10 @@ object Versions {
     // room
     const val roomDatabase = "2.4.2"
     const val liveData = "2.4.1"
+    // restful api
+    const val retrofit = "2.9.0"
+    const val okHttp = "4.9.1"
+    const val gson = "2.9.0"
+    const val logInterceptor = "3.1.0"
 
 }
