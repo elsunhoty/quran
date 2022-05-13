@@ -1,7 +1,7 @@
 plugins {
     id("java-library")
     id("org.jetbrains.kotlin.jvm")
-//    kotlin("kapt")
+    kotlin("kapt")
 }
 
 java {
@@ -9,5 +9,5 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
 }
 dependencies{
-//    implementation(Dependencies.restfulApi)
+    implementation(Dependencies.restfulApi)
 }
