@@ -16,3 +16,4 @@ rootProject.name = "Quran"
 include ':app'
 include ':persistent'
 include ':remote'
+include ':domain'
